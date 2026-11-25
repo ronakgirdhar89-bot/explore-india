@@ -5,7 +5,7 @@ export const SITE_TAGLINE = "Discover India, One Destination at a Time.";
 export const SITE_DESCRIPTION =
   "Practical India travel guide with verified seasonal charts, train and road routes, local food picks, and transparent trip budgets across India.";
 export const SITE_URL = (
-  process.env.NEXT_PUBLIC_SITE_URL || "https://exploreindia.in"
+  process.env.NEXT_PUBLIC_SITE_URL || "https://explore-india-guide.vercel.app"
 ).replace(/\/+$/, "");
 
 export const DEFAULT_OG_IMAGE = "/images/hero-india-travel-guide.webp";
