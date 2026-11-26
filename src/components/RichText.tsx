@@ -1,8 +1,10 @@
 import Link from "next/link";
 import { Fragment } from "react";
+import { OutboundLink } from "@/components/OutboundLink";
 
 interface RichTextProps {
   text: string;
+  context?: string;
 }
 
 const LINK_PATTERN = /\[([^\]]+)\]\(([^)]+)\)/g;
@@ -10,7 +12,7 @@ const LINK_PATTERN = /\[([^\]]+)\]\(([^)]+)\)/g;
 /**
  * Safely renders inline markdown links `[label](href)` within editorial paragraphs.
  */
-export function RichText({ text }: RichTextProps) {
+export function RichText({ text, context = "editorial-inline" }: RichTextProps) {
   const parts: Array<string | { label: string; href: string }> = [];
   let lastIndex = 0;
 
@@ -45,15 +47,15 @@ export function RichText({ text }: RichTextProps) {
           );
         }
         return (
-          <a
+          <OutboundLink
             key={i}
             href={part.href}
-            target="_blank"
-            rel="noopener noreferrer"
+            label={part.label}
+            context={context}
             className="font-medium text-[#1B5E4A] underline decoration-[#1B5E4A]/40 underline-offset-4 transition-colors hover:text-[#16221D]"
           >
             {part.label}
-          </a>
+          </OutboundLink>
         );
       })}
     </>

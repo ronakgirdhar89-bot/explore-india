@@ -34,6 +34,7 @@ export function trackOutboundOfficialClick(label: string, url: string, context: 
     link_text: label,
     link_url: url,
     click_context: context,
+    transport_type: "beacon",
   });
 }
 

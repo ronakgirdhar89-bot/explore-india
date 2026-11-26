@@ -85,10 +85,54 @@ export default function AboutPage() {
             Travel costs, monument timings, and mountain road conditions change
             frequently. Explore India clearly labels all trip budgets as
             approximate estimates and links directly to official state tourism
-            boards, Indian Railways, and Archaeological Survey of India portals.
+            boards, Indian Railways, HRTC Volvo portals, and Archaeological
+            Survey of India resources.
           </p>
           <p>
-            This platform was also engineered as a comprehensive Search Engine
+            Every regional hub—from{" "}
+            <Link
+              href="/destinations/region/north-india"
+              className="font-medium text-[#C85A17] underline decoration-[#C85A17]/40 underline-offset-4 hover:text-[#16221D]"
+            >
+              North India Himalayan routes
+            </Link>{" "}
+            and{" "}
+            <Link
+              href="/destinations/region/west-india"
+              className="font-medium text-[#C85A17] underline decoration-[#C85A17]/40 underline-offset-4 hover:text-[#16221D]"
+            >
+              Rajasthan &amp; Goa heritage circuits
+            </Link>{" "}
+            to{" "}
+            <Link
+              href="/destinations/region/south-india"
+              className="font-medium text-[#C85A17] underline decoration-[#C85A17]/40 underline-offset-4 hover:text-[#16221D]"
+            >
+              South India backwaters
+            </Link>{" "}
+            and island ferries—is structured with verified seasonal advice,
+            real rail/bus transit access, and local food recommendations tailored
+            for Indian students, families, and international visitors.
+          </p>
+          <p>
+            Our{" "}
+            <Link
+              href="/blog/category/budget-travel"
+              className="font-medium text-[#1B5E4A] underline decoration-[#1B5E4A]/40 underline-offset-4 hover:text-[#16221D]"
+            >
+              budget travel guides
+            </Link>
+            —such as the itemized{" "}
+            <Link
+              href="/blog/3-day-manali-trip-budget-from-delhi-by-volvo"
+              className="font-medium text-[#1B5E4A] underline decoration-[#1B5E4A]/40 underline-offset-4 hover:text-[#16221D]"
+            >
+              Delhi to Manali Volvo budget breakdown
+            </Link>
+            —focus on transparent rupee math rather than inflated agency quotes.
+          </p>
+          <p>
+            This platform was engineered as a comprehensive Search Engine
             Optimization (SEO) academic project for CSET489, demonstrating
             semantic HTML, structured JSON-LD schema, Core Web Vitals
             optimization, and search-intent content architecture.
@@ -101,6 +145,12 @@ export default function AboutPage() {
             className="rounded-xl bg-[#C85A17] px-5 py-2.5 text-sm font-semibold text-white hover:bg-[#AE4B10]"
           >
             Browse Destinations
+          </Link>
+          <Link
+            href="/blog"
+            className="rounded-xl border border-[#E4DDD0] bg-white px-5 py-2.5 text-sm font-semibold text-[#16221D] hover:bg-[#FAF7F2]"
+          >
+            Read Travel Blog
           </Link>
           <Link
             href="/contact"
