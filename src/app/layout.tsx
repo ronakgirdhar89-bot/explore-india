@@ -30,7 +30,8 @@ const fraunces = Fraunces({
 });
 
 const gscCode = normalizeGscVerification(
-  process.env.NEXT_PUBLIC_GSC_VERIFICATION
+  process.env.NEXT_PUBLIC_GSC_VERIFICATION ||
+    "HMcT97B8qG9x9nNUv_RBqAUOGKa0lgvD4gIRZRnJSP0"
 );
 const bingCode = process.env.NEXT_PUBLIC_BING_VERIFICATION?.trim();
 

@@ -8,7 +8,8 @@ import Script from "next/script";
 const GA_MEASUREMENT_ID_PATTERN = /^(G|GT|AW)-[A-Z0-9]+$/i;
 
 function getValidatedGaId(): string | null {
-  const raw = process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID?.trim();
+  const raw =
+    process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID?.trim() || "G-H77MTNBDT0";
   if (!raw || !GA_MEASUREMENT_ID_PATTERN.test(raw)) {
     return null;
   }
