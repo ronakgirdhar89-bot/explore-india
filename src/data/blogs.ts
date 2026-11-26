@@ -91,8 +91,8 @@ export const BLOG_POSTS: BlogPost[] = [
         id: "volvo-cost-breakdown",
         heading: "Exact 3-Day Manali Budget From Delhi by Volvo (Per Person)",
         paragraphs: [
-          "The biggest variable in a short Delhi-to-Manali getaway is whether you book an official Himachal Road Transport Corporation (HRTC) Himsuta Volvo from ISBT Kashmere Gate or a private semi-sleeper/Volvo from Majnu Ka Tila, and whether you travel on a regular weekend or during May–June peak school holidays.",
-          "Below is a realistic itemized budget table comparing a tight college student trip against a comfortable solo or couple budget. Notice how travelling overnight in both directions gives you three full daytime windows while needing only two nights of accommodation in [Manali](/destinations/manali)."
+          "The biggest variable in a short Delhi-to-Manali getaway is whether you book an official Himsuta Volvo on the [official HRTC bus booking portal](https://online.hrtchp.com/) from ISBT Kashmere Gate or a private semi-sleeper/Volvo from Majnu Ka Tila, and whether you travel on a regular weekend or during May–June peak school holidays.",
+          "Below is a realistic itemized budget table comparing a tight college student trip against a comfortable solo or couple budget. Notice how travelling overnight in both directions gives you three full daytime windows while needing only two nights of accommodation in [Manali](/destinations/manali). When comparing fares on search engines, travellers often run into outdated aggregator blogs; following transparent search practices highlighted by [modern SEO tools and resources](https://seonalabs.com) helps ensure this budget guide surfaces verified rupee estimates directly in search results."
         ],
         table: {
           caption: "3-Day Delhi to Manali Budget Comparison (INR per person)",
