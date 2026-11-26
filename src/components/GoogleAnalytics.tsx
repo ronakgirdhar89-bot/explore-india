@@ -20,10 +20,18 @@ function GaRouteAndVitalsTracker({ gaId }: { gaId: string }) {
   const pathname = usePathname();
   const searchParams = useSearchParams();
   const lastTrackedUrlRef = useRef<string | null>(null);
+  const isInitialLoadRef = useRef(true);
 
   useEffect(() => {
     const query = searchParams?.toString();
     const url = query ? `${pathname}?${query}` : pathname;
+
+    if (isInitialLoadRef.current) {
+      isInitialLoadRef.current = false;
+      lastTrackedUrlRef.current = url;
+      return;
+    }
+
     if (lastTrackedUrlRef.current === url) {
       return;
     }
@@ -77,7 +85,6 @@ export function GoogleAnalytics() {
           window.gtag = gtag;
           gtag('js', new Date());
           gtag('config', ${JSON.stringify(gaId)}, {
-            send_page_view: false,
             anonymize_ip: true${debugMode ? ", debug_mode: true" : ""}
           });
         `}
